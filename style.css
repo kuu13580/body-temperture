@@ -1,0 +1,78 @@
+html {
+    font-size: 0.8vmax;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+}
+#currentDatetime{
+    display: block;
+}
+.label {
+    margin-top: 20px;
+}
+
+.label span {
+    margin-right: 40vw;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+#head {
+    background-color: #a3fc87;
+}
+
+#temperatureSelect {
+    width: 30vw;
+}
+
+#date, #time {
+    width: 18vw;
+}
+
+.inputbox {
+    width: 40vw;
+    height: 3vmax;
+    font-size: 2rem;
+    margin: 5px auto;
+    border: 1px solid;
+}
+
+#submit {
+    width: 6vw;
+    height: 3vw;
+    font-size: 2rem;
+}
+
+.content p {
+    margin: 0px;
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 62.5%;
+    }
+    #date,#time{
+        display: block;
+        width: 60vw;
+    }
+    #submit {
+        width: 8rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+    .inputbox{
+        height: 3rem;
+        width: 60vw;
+    }
+    .label span {
+        margin-right: 60vw;
+    }
+}

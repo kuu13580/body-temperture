@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+  <meta lang="ja">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>熱海旅行体温管理</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="check.js" defer></script>
+</head>
+
+<body>
+  <div id="head">
+    <header>
+      <h1>体温管理</h1>
+    </header>
+  </div>
+  <div class="content">
+    <form action="check.php" method="post">
+      <div class="label" style="margin-top: 10px;"><span>氏名</span></div>
+      <select name="name" id="nameSelect" class="inputbox" required>
+      </select><br>
+      <div class="label"><span>日時</span></div>
+      <input type="date" id="date" class="inputbox" name="date" value="" required>
+      <input type="time" id="time" class="inputbox" name="time" value="" required>
+      <span id="currentDatetime" style=" font-size: 2rem;cursor: pointer;">現在日時に設定</span>
+      <div class="label"><span>体温</span></div>
+      <div>
+        <span id="temperatureView"></span>
+        <input type="range" name="temperature" min="35" max="40" step="0.1" value="36.5" id="temperatureSelect"
+          class="inputbox" style="display: inline;" required>
+      </div><br>
+      <input type="submit" id="submit" value="送信">
+    </form>
+  </div>
+</body>
