@@ -1,6 +1,6 @@
 const nameSelect = document.querySelector("#nameSelect");
 // 氏名リスト
-const namelist = ["東條", "古賀", "加藤", "杉浦", "南方", "吉海", "原"];
+const namelist = ["A", "B", "C", "D", "E", "F", "G"];
 let nameListContents;
 nameListContents += '<option value="" hidden>未選択</option>'
 namelist.forEach(element => {
